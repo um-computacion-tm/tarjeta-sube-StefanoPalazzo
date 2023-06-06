@@ -9,6 +9,8 @@ PRECIO_TICKET = 70
 ACTIVADO = 'activado'
 DESACTIVADO = 'desactivado'
 
+# comentario
+
 DESCUENTOS = {
     PRIMARIO: 50,
     SECUNDARIO: 40,
@@ -46,7 +48,7 @@ class Sube():
             if self.saldo < self.obtener_precio_ticket():
                 raise NoHaySaldoException()
             else:
-                self.saldo -= self.obtener_precio_ticket()
+                self.saldo -= self.obtener_precio_ticket() 
            
         else: 
             if self.saldo < self.obtener_precio_ticket():
