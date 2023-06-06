@@ -89,6 +89,7 @@ class TestSube(unittest.TestCase):
             ACTIVADO,
         )
 
+# otro comentario
     def test_imposible_cambiar_a_estado_no_existente(self):
         estado = 'pendiente'
 
@@ -106,8 +107,6 @@ class TestSube(unittest.TestCase):
             sube.saldo,
             0,
         )
-    
-
 
 if __name__ == '__main__':
     unittest.main()
